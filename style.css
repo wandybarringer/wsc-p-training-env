@@ -4,24 +4,11 @@
   box-sizing: border-box;
 }
 
-:root {
-  --bg-light: #f5f7fa;
-  --sidebar-w: 240px;
-  --accent-blue: #0070ba;
-  --nav-hover: #d1e3f3;
-  --sidebar-bg: #ffffff;
-  --main-bg: #ffffff;
-  --text-main: #2c2e2f;
-  --border-color: #e5e7eb;
-  --payment-service-blue: #003087;
-  --light-blue: #0070ba;
-}
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
   display: flex;
-  background-color: var(--main-bg);
+  background: #ffffff;
 }
 
 .training-disc {
@@ -30,15 +17,15 @@ body {
   text-align: center;
   width: 100%;
   padding: 10px;
-  color: var(--nav-hover);
-  background: var(--light-blue);
+  color: #d1e3f3;
+  background: #0070ba;
 }
 
 /* Sidebar */
 .sidebar {
-  width: var(--sidebar-w);
+  width: 240px;
   height: 100vh;
-  border-right: 1px solid var(--border-color);
+  border-right: 1px solid #e5e7eb;
   background: #fcfcfc;
   position: fixed;
   padding: 20px 0;
@@ -84,7 +71,7 @@ body {
 }
 
 .env-btn.active {
-  background: var(--payment-service-blue);
+  background: #003087;
   color: white;
 }
 
@@ -93,20 +80,20 @@ body {
   align-items: center;
   padding: 12px 20px;
   text-decoration: none;
-  color: var(--text-main);
+  color: #2c2e2f;
   font-size: 14px;
 }
 
 .nav-item.active {
-  background-color: var(--nav-hover);
-  color: var(--accent-blue);
+  background: #d1e3f3;
+  color: #0070ba;
   border-radius: 0 20px 20px 0;
   margin-right: 10px;
 }
 
 /* Main Content */
 .content {
-  margin-left: var(--sidebar-w);
+  margin-left: 240px;
   flex-grow: 1;
   padding: 20px 40px;
 }
@@ -129,7 +116,7 @@ a {
 }
 
 .profile-container {
-  position: relative; /* This is the 'anchor' for the absolute child */
+  position: relative;
   display: inline-block;
 }
 
@@ -158,7 +145,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .search-container input {
@@ -172,15 +159,14 @@ a {
 
 #profile-card {
   position: absolute;
-  top: 45px; /* Moves it exactly below the circle */
-  right: 0; /* Aligns the right edge of the card with the circle */
-  z-index: 100; /* Ensures it floats ABOVE other content */
+  top: 45px;
+  right: 0;
+  z-index: 100;
 
-  /* Optional: Styling to make it look like a floating card */
   background: white;
   border: 1px solid #ddd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 250px; /* Set a width so it doesn't squash */
+  width: 250px;
   border-radius: 8px;
 }
 
@@ -218,7 +204,7 @@ a {
 
 .profile-settings a {
   text-decoration: none;
-  color: var(--accent-blue);
+  color: #0070ba;
 }
 
 .settings {
@@ -293,8 +279,8 @@ a {
   cursor: pointer;
 }
 .tab.active {
-  border-bottom: 2px solid var(--light-blue);
-  color: var(--light-blue);
+  border-bottom: 2px solid #0070ba;
+  color: #0070ba;
 }
 
 .solution-grid {
@@ -690,7 +676,7 @@ code {
 }
 
 .feature-list a {
-  color: var(--light-blue);
+  color: #0070ba;
 }
 
 .features-col h4 {
@@ -1180,7 +1166,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  color: var(--text-main);
+  color: #2c2e2f;
 }
 
 .registered-larger {
@@ -1188,17 +1174,17 @@ h1 {
 }
 
 .done-btn {
-  background: var(--payment-service-blue);
+  background: #003087;
   color: white;
   width: 300px;
   padding: 10px;
   border-radius: 50px;
-  border: solid 2px var(--light-blue);
+  border: solid 2px #0070ba;
   font-weight: bold;
 }
 
 .add-another-domain {
-  color: var(--light-blue);
+  color: #0070ba;
   font-weight: bold;
 }
 
